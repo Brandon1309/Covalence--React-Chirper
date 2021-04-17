@@ -55,23 +55,23 @@ const Form = (props) => {
 
 
     <div className="container-fluid">
-      <div className="col-8  justify-content-center">
-        <form className="">
-          <div className="row">
-            {/* <label htmlFor="title">Title</label> */}
-            <input className="form-control col-10 m-4" placeholder="Title here" onChange={handleTitleChangeEvent} type="text" value={title} />
-            <button className="btn btn-light btn-lg col-1 " type="submit" onClick={handleClickEvent}><AddIcon /></button>
-          </div>
-          {/* <label htmlFor="body">Body</label> */}
-          <textarea className=" txt-ar form-control m-2 col-11" placeholder="Body Here" onChange={handleBodyChangeEvent} type="text" value={body} />
+      {/* <div className="  justify-content-center"> */}
+      <form className="">
+        <div className="row">
+          {/* <label htmlFor="title">Title</label> */}
+          <input className="form-control col-8 m-4 mr-5" placeholder="Title here" onChange={handleTitleChangeEvent} type="text" value={title} />
+          <button className="btn btn-light btn-sm col-1 " type="submit" onClick={handleClickEvent}><AddIcon /></button>
+        </div>
+        {/* <label htmlFor="body">Body</label> */}
+        <textarea className=" txt-ar form-control m-2 col-10" placeholder="Body Here" onChange={handleBodyChangeEvent} type="text" value={body} />
 
-          {/* <hr className="" /> */}
+        {/* <hr className="" /> */}
 
-        </form>
-        <ul className="d-block list-unstyled m-4 col-12 ">
-          {fancyList}
-        </ul>
-      </div>
+      </form>
+      <ul className="d-block list-unstyled d-flex flex-column justify-content-center m-1 col-11 ">
+        {fancyList}
+      </ul>
+      {/* </div> */}
     </div>
   )
 
